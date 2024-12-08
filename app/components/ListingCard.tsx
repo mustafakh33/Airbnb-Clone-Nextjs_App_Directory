@@ -14,16 +14,17 @@ const ListingCard = ({
   location,
 }: ListingCardProps) => {
   return (
-    <div className='flex py-2 px-2 border-b cursor-pointer pr-4 hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t'>
-      <div className='relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0'>
+    <div className='flex flex-col gap-4 md:gap-0 md:flex-row py-2 px-2 border-b cursor-pointer pr-4 hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t'>
+      <div className='flex-shrink-0'>
         <Image
           src={img}
-          fill
-          className='rounded-2xl object-cover'
+          width={500}
+          height={200}
+          className='rounded-2xl object-cover h-[15rem] w-full md:w-80'
           alt='Listing-Card'
         />
       </div>
-      <div className='flex flex-col flex-grow pl-5'>
+      <div className='flex flex-col flex-grow md:pl-5 '>
         <div className='flex justify-between'>
           <p>{location}</p>
           <HeartIcon className='h-7 cursor-pointer' />

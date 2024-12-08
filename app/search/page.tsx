@@ -37,10 +37,10 @@ const SearchResult = async ({
     <>
       <Header placeholder={`${location} | ${range} | ${numOfGuests} guests`} />
       <main>
-        <section>
+        <section className="mb-3">
           <div className='container'>
-            <div className='pt-14 pr-4'>
-              <p className='text-xs'>
+            <div className='pt-14'>
+              <p className='text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl'>
                 300+ Stays - {range} - for {numOfGuests} guests
               </p>
               <h1 className='text-3xl font-semibold mt-2 mb-6 '>
